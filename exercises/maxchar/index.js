@@ -19,10 +19,10 @@ const maxChar = (str) => {
   for (let char in charMap) {
     if (charMap[char] > max) {
       max = charMap[char];
-      maxChar = char;
+      maxChar = max;
     }
   }
-  return max;
+  return maxChar;
 };
 
 console.log(maxChar("Helo World"));
